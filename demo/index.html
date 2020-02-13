@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Demo</title>
+    </head>
+<body>
+    <div id='table'>
+    <!-- 生成表格的目标区域 The area to put the table -->
+    </div>
+</body>
+<script src='../src/list2table.js'></script>
+<script>
+    list2table(
+    	'table',                 // target element id
+    	[
+            ['Tom', 21, 'Computer Science', 1581576171], 
+            ['Amir', 18, 'Mathematics', 1581576171]
+        ],                                       // data list or url to get a json list
+        ['Name', 'Age', 'Major', 'Create Time'], // table header (optional)
+        {3: 'timestamp'}         // settings:set format of col 3 as timestamp (optional)
+    );
+</script>
+</html>
